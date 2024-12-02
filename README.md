@@ -13,6 +13,6 @@ Emscripten was used to compile the C code and display it on an HTML page. For mo
   </tr>
   <tr>
     <td>BMI</td>
-    <td><a href="https://jallemand971.github.io/Projects_in_HTML-CSS/resume/resume.html">https://jallemand971.github.io/Projects_in_HTML-CSS/resume/resume.html</a></td>
+    <td><a href="https://jallemand971.github.io/Projects_in_C/BMI/BMI.html">https://jallemand971.github.io/Projects_in_C/BMI/BMI.html</a></td>
   </tr>
 
