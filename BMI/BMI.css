@@ -25,6 +25,7 @@ form {
     padding: 2rem;
     border-radius: 1rem; 
     width: 90%;
+    height: 100vh;
     box-sizing: border-box;
 }
 }
