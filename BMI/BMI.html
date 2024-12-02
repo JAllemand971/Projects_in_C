@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BMI Calculator</title>
+    <script src="BMI.js"></script>
+</head>
+
+<body>
+    <h1>BMI Calculator</h1>
+
+    <script> 
+            var calculate_patient = Module.cwrap(
+                "calculate_patient", // C function to calculate BMI
+                "string",          // Return type: string
+                ["number", "number"] // Input parameters: two numbers
+            );
+
+            var total_patients = Module.cwrap(
+                "total_patients",  // C function to get the total number of patients
+                "number"           // Return type: number
+            );
+
+            function run_wasm() {
+            // Retrieve values from input fields
+            var weight = parseFloat(document.getElementById("weight").value);
+            var height = parseFloat(document.getElementById("height").value);
+
+            // Call the C function and display the results
+            var result = calculate_patient(weight, height);
+            document.getElementById("output").innerText = result;
+
+            // Display the total number of patients
+            var patientCount = total_patients();
+            document.getElementById("patients").innerText = `Total number of patients: ${patientCount}`;
+            }
+        </script>
+
+    <form id="bmi-form">
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" step="0.1" required><br><br>
+        <label for="height">Height (m):</label>
+        <input type="number" id="height" step="0.01" required><br><br>
+        <button type="button" onclick="run_wasm()">Calculate</button>
+    </form>
+
+    <h2>Results</h2>
+    <pre id="output"></pre>
+
+    <p id="patients"></p>
+</body>
+
+</html>
