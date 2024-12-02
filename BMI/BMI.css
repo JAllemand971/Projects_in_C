@@ -29,6 +29,6 @@ form {
 }
 
 #output, #patients {
-	color: blue;
+	font-color: blue;
 	font-weight: bold;
 }
