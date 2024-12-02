@@ -43,6 +43,12 @@ form {
         width: 100%;
         height: auto;
         margin: 0 auto;
+    }
+
+input {
+	width: 80%;
+	margin: 0 auto;
     }	
+	
 }
 
