@@ -9,7 +9,7 @@ body {
     align-items: center;  
     width: 100%;
     height: auto;
-    background-color: white;
+    background-color: lightblue;
     font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     font-size: 1.5rem;
     line-height: 1.5;
@@ -32,3 +32,17 @@ form {
 	color: mediumaquamarine;
 	font-weight: bold;
 }
+
+@media (max-width: 768px) {
+form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+	text-align: center;		
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }	
+}
+
