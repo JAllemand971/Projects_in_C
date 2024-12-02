@@ -22,10 +22,9 @@ body {
 form {
     max-width: 100%;
     background-color: mediumaquamarine;
-    margin: 0;
     padding: 2rem;
     border-radius: 1rem; 
-    width: 100%;
+    width: 90%;
     height: 100vh; 
     box-sizing: border-box;
 }
@@ -41,7 +40,8 @@ form {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
+		max-width: 100%;
+        width: 90%;
         height: 100vh;
         margin: 0 auto;
     }
@@ -57,4 +57,3 @@ form {
         font-size: 1.2rem;
     }
 }
-
