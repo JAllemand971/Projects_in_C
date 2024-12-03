@@ -13,9 +13,10 @@ body {
 
 /* Ajustements pour les écrans moyens (tablettes) */
 @media screen and (max-width: 768px) {
-  #bmi-form {
+  form {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   
   input, label {
@@ -29,9 +30,10 @@ body {
     font-size: 0.9rem;
   }
 
-  #bmi-form {
+  form {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   
   input, label {
