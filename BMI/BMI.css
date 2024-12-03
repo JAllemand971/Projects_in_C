@@ -12,11 +12,12 @@ body {
 }
 
 /* Ajustements pour les écrans moyens (tablettes) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {  
   form {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 80%;
   }
   
   input, label {
@@ -34,6 +35,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 80%;
   }
   
   input, label {
