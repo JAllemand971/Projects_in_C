@@ -33,7 +33,7 @@ body {
 /* Ajustements pour les petits écrans (smartphones) */
 @media screen and (max-width: 480px) {
   body {
-    font-size: 0.9rem;
+    font-size: 4rem;
   }
 
   form {
