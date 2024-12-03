@@ -1,67 +1,36 @@
-* {
-    font-size: 16px;
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  ul {
+    font-size: 1rem;
+  }
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: lightblue;
-    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    text-align: center;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
+/* Ajustements pour les petits écrans (smartphones) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
 
-@media (min-width: 768px) {
-    form {
-        background-color: mediumaquamarine;
-        padding: 2rem;
-        border-radius: 1rem;
-        width: 40%;
-        height: auto;
-        box-sizing: border-box;
-    }
-}
+  h1 {
+    font-size: 2rem;
+  }
 
-#output, #patients {
-    font-weight: bold;
-}
+  h2 {
+    font-size: 1rem;
+  }
 
-@media (max-width: 768px) {
-    body {
-        font-size: 1.6rem; /* Taille de texte adaptée */
-    }
+  #main {
+    margin: 15px auto;
+    padding: 10px;
+  }
 
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100vh; /* Prend toute la hauteur de l'écran */
-        background-color: mediumaquamarine;
-        padding: 1.5rem; /* Espacement interne pour aérer */
-        box-sizing: border-box;
-    }
+  ul {
+    padding: 5px;
+    list-style-type: square;
+  }
 
-    input {
-        width: 90%; /* Champs presque pleine largeur */
-        margin-bottom: 1rem;
-        padding: 0.8rem;
-        font-size: 1.2rem;
-    }
-
-    button {
-        width: 90%; /* Même largeur que les champs */
-        min-height: 3rem;
-        padding: 1rem;
-        font-size: 1.4rem;
-    }
+  
 }
