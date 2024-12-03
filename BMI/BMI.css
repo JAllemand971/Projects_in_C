@@ -13,7 +13,7 @@ body {
 
 /* Ajustements pour les écrans moyens (tablettes) */
 @media screen and (max-width: 768px) {
-  * {
+  #bmi-for {
     display: flex;
     flex-direction: column;
   }
@@ -29,7 +29,7 @@ body {
     font-size: 0.9rem;
   }
 
-  * {
+  #bmi-for  {
     display: flex;
     flex-direction: column;
   }
