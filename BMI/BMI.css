@@ -21,7 +21,7 @@ body {
   input, label {
   width: 100%;
   }
-
+}
 
 /* Ajustements pour les petits écrans (smartphones) */
 @media screen and (max-width: 480px) {
@@ -37,3 +37,4 @@ body {
   input, label {
   width: 100%;
   }
+}
